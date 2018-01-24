@@ -2,7 +2,7 @@
 FROM jboss/base-jdk:7
 
 # Set the JBOSS_VERSION env variable
-ENV JBOSS_VERSION 7.0.0.Final
+ENV JBOSS_VERSION 7.0.1.Final
 ENV JBOSS_HOME /opt/jboss/as7
 
 USER root
