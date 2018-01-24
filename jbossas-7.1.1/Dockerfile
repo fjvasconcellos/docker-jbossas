@@ -1,5 +1,5 @@
 # Criado como base na imagem Wildlfy
-FROM jboss/base-jdk:6
+FROM jboss/base-jdk:7
 
 # Set the JBOSS_VERSION env variable
 ENV JBOSS_VERSION 7.1.1.Final
