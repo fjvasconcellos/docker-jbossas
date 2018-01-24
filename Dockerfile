@@ -2,8 +2,8 @@
 FROM jboss/base-jdk:7
 
 # Set the JBOSS_VERSION env variable
-ENV JBOSS_VERSION 7.1.0.Final
-ENV JBOSS_HOME /opt/jboss/as710
+ENV JBOSS_VERSION 7.0.0.Final
+ENV JBOSS_HOME /opt/jboss/as7
 
 USER root
 
@@ -27,4 +27,4 @@ EXPOSE 8080
 
 # Set the default command to run on boot
 # This will boot WildFly in the standalone mode and bind to all interface
-CMD ["/opt/jboss/as710/bin/standalone.sh", "-b", "0.0.0.0"]
+CMD ["/opt/jboss/as7/bin/standalone.sh", "-b", "0.0.0.0"]
