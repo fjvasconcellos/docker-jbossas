@@ -2,7 +2,7 @@
 FROM jboss/base-jdk:7
 
 # Set the JBOSS_VERSION env variable
-ENV JBOSS_VERSION 7.0.2.Final
+ENV JBOSS_VERSION 7.1.0.Final
 ENV JBOSS_HOME /opt/jboss/as7
 
 USER root
@@ -10,7 +10,7 @@ USER root
 # Add the WildFly distribution to /opt, and make wildfly the owner of the extracted tar content
 # Make sure the distribution is available from a well-known place
 RUN cd $HOME \
-    && curl -O http://download.jboss.org/jbossas/7.0/jboss-as-$JBOSS_VERSION/jboss-as-$JBOSS_VERSION.tar.gz \
+    && curl -O http://download.jboss.org/jbossas/7.1/jboss-as-$JBOSS_VERSION/jboss-as-$JBOSS_VERSION.tar.gz \
     && tar xf jboss-as-$JBOSS_VERSION.tar.gz \
     && mv $HOME/jboss-as-$JBOSS_VERSION $JBOSS_HOME \
     && rm jboss-as-$JBOSS_VERSION.tar.gz \
